@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#10121a" />
+<title>灵核档案｜人格异能测试</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+<meta name="description" content="用32个现实情境，找到你的主能力谱系与驱动方式。" />
+<style>
+body{background:radial-gradient(circle at 82% 0%,color-mix(in srgb,var(--type1,#7e6ee8) 18%,transparent) 0,transparent 34%),radial-gradient(circle at 10% 65%,#171b2a 0,transparent 28%),var(--bg);transition:background .5s ease}
+:root{--bg:#0e1017;--panel:#171a24;--panel2:#1d202c;--line:#303545;--text:#f2f3f7;--muted:#a8adbb;--soft:#777e90;--accent:#9c8cff;--accent2:#c8bdff;--good:#8dd7c2;--danger:#e8a6aa;--radius:18px;color-scheme:dark;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text)}body{background:radial-gradient(circle at 80% 0%,#22213b 0,transparent 34%),var(--bg)}button{font:inherit}.shell{width:min(760px,100%);min-height:100svh;margin:auto;padding:22px clamp(18px,4vw,34px) 40px;display:flex;flex-direction:column}.topbar{display:flex;align-items:center;justify-content:space-between;min-height:42px}.brand{font-size:13px;letter-spacing:.16em;color:var(--muted);font-weight:650}.quiet{border:0;background:transparent;color:var(--muted);padding:9px 0;cursor:pointer}.view{display:none;flex:1}.view.active{display:flex;flex-direction:column}.intro{justify-content:center;padding:4vh 0 7vh}.eyebrow{font-size:13px;color:var(--accent2);letter-spacing:.12em;margin-bottom:18px}.intro h1{font-size:clamp(40px,9vw,72px);line-height:1.04;letter-spacing:-.045em;margin:0 0 20px;max-width:650px}.intro .lead{font-size:18px;line-height:1.75;color:#c7cad4;max-width:580px;margin:0 0 34px}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}.chip{border:1px solid var(--line);border-radius:999px;color:var(--muted);padding:8px 12px;font-size:14px;background:#151822}.primary{appearance:none;border:0;border-radius:14px;background:var(--text);color:#11131a;padding:16px 24px;font-weight:750;font-size:17px;cursor:pointer;transition:.18s transform,.18s opacity}.primary:hover{transform:translateY(-1px)}.primary:active{transform:none}.primary:disabled{opacity:.45;cursor:not-allowed}.note{font-size:13px;line-height:1.6;color:var(--soft);margin-top:16px}.archive-mark{width:86px;height:86px;border:1px solid #65607b;border-radius:50%;position:relative;margin-bottom:28px}.archive-mark:before,.archive-mark:after{content:"";position:absolute;inset:16px;border:1px solid #8d80cd;transform:rotate(45deg)}.archive-mark:after{inset:31px;border-radius:50%;background:var(--accent);box-shadow:0 0 28px #7f6bf766}.quiz{padding-top:5vh}.progress-row{display:flex;align-items:center;gap:14px;margin:15px 0 46px}.progress{height:4px;flex:1;background:#282c39;border-radius:5px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}.count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}.stage{font-size:13px;color:var(--accent2);margin-bottom:14px}.question{font-size:clamp(25px,5vw,36px);line-height:1.35;letter-spacing:-.025em;margin:0 0 30px}.options{display:grid;gap:12px}.option{width:100%;border:1px solid var(--line);background:#171a23;color:var(--text);border-radius:15px;text-align:left;padding:17px 18px;line-height:1.55;font-size:16px;cursor:pointer;transition:.16s border-color,.16s background,.16s transform}.option:hover{border-color:#69637f;background:#1b1e29}.option.selected{border-color:var(--accent);background:#24223a;transform:translateX(3px)}.quiz-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px}.back{border:0;background:transparent;color:var(--muted);padding:12px 0;cursor:pointer}.result{padding-top:24px}.result-head{display:grid;grid-template-columns:128px 1fr;gap:24px;align-items:center;padding:26px 0 30px;border-bottom:1px solid var(--line)}.sigil{width:128px;height:128px;border-radius:34px;background:linear-gradient(145deg,var(--type1),#171925 72%);border:1px solid color-mix(in srgb,var(--type1) 55%,#fff 12%);display:grid;place-items:center;position:relative;overflow:hidden}.sigil span{font-size:31px;font-weight:800;letter-spacing:.06em}.sigil:before{content:"";position:absolute;width:78px;height:78px;border:1px solid #ffffff35;border-radius:50%;transform:rotate(25deg)}.sigil:after{content:"";position:absolute;width:45px;height:45px;border:1px solid #ffffff62;transform:rotate(45deg)}.result-code{color:var(--accent2);font-size:13px;letter-spacing:.12em}.result h1{font-size:clamp(34px,7vw,52px);letter-spacing:-.04em;margin:6px 0 7px}.combo{color:var(--muted)}.quote{font-size:20px;line-height:1.7;color:#d8d9e2;margin:30px 0}.section{padding:27px 0;border-top:1px solid var(--line)}.section h2{font-size:17px;margin:0 0 14px}.section p{color:#c4c7d1;line-height:1.75;margin:0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}.card b{display:block;margin-bottom:8px;font-size:15px}.card p{font-size:14px}.bars{display:grid;gap:15px}.bar-label{display:flex;justify-content:space-between;font-size:14px;margin-bottom:7px;color:#c9ccd6}.bar-track{height:7px;background:#292d3a;border-radius:9px;overflow:hidden}.bar-fill{height:100%;border-radius:9px;background:var(--bar)}.action-row{display:flex;gap:10px;flex-wrap:wrap;padding:26px 0}.secondary{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:14px;padding:14px 18px;font-weight:650;cursor:pointer}.disclaimer{font-size:12px;line-height:1.6;color:var(--soft);padding:20px 0}.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:#f4f4f7;color:#11131a;padding:10px 15px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:560px){.shell{padding-top:14px}.intro{padding-top:2vh}.result-head{grid-template-columns:92px 1fr}.sigil{width:92px;height:92px;border-radius:25px}.sigil span{font-size:24px}.grid2{grid-template-columns:1fr}.question{font-size:27px}.option{padding:15px 16px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+<style>
+.power-profile{display:grid;grid-template-columns:minmax(260px,.9fr) 1fr;gap:26px;align-items:center}
+.radar-wrap{background:linear-gradient(150deg,#1b1e29,#141720);border:1px solid var(--line);border-radius:18px;padding:14px;min-height:330px;display:grid;place-items:center}
+.radar{width:100%;max-width:330px;height:auto;overflow:visible}.radar-grid{fill:none;stroke:#3a3f50;stroke-width:1}.radar-axis{stroke:#303545;stroke-width:1}.radar-shape{fill:color-mix(in srgb,var(--type1) 32%,transparent);stroke:var(--type1);stroke-width:2.5}.radar-point{fill:#f3f1ff;stroke:var(--type1);stroke-width:2}.radar-label{fill:#c9ccd6;font-size:12px;text-anchor:middle;dominant-baseline:middle}
+.result.active{animation:archiveReveal .65s ease both}.result-head{position:relative;isolation:isolate;border:1px solid color-mix(in srgb,var(--type1) 38%,var(--line));border-radius:24px;padding:28px!important;overflow:hidden;background:linear-gradient(130deg,color-mix(in srgb,var(--type1) 16%,#171a24),#151821 70%)}.result-head:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;right:-80px;top:-130px;background:var(--type1);filter:blur(70px);opacity:.18;z-index:-1}.result-head:after{content:"档案已解封";position:absolute;right:20px;bottom:14px;color:#ffffff42;font-size:11px;letter-spacing:.18em}.sigil{box-shadow:0 0 44px color-mix(in srgb,var(--type1) 28%,transparent)}.sigil:before{animation:slowSpin 14s linear infinite}.quote{padding:24px 2px 6px;font-size:21px}.section h2{font-size:13px!important;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:18px!important}.sign-list{display:grid;gap:10px}.sign{display:flex;gap:13px;align-items:flex-start;padding:14px 16px;background:#171a23;border:1px solid var(--line);border-radius:13px;color:#d2d4dc;line-height:1.55}.sign i{width:7px;height:7px;flex:0 0 7px;border-radius:50%;margin-top:9px;background:var(--type1);box-shadow:0 0 14px var(--type1)}.inner-card{background:linear-gradient(145deg,#191c27,#141720);min-height:150px}.inner-card b{color:#f1efff}.trigger{border-left:3px solid var(--type1);padding:2px 0 2px 18px!important}.hint-card{position:relative;overflow:hidden;border:1px solid color-mix(in srgb,var(--type1) 55%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--type1) 18%,#171a24),#171a24);border-radius:18px;padding:25px}.hint-card:before{content:"✦";position:absolute;right:20px;top:12px;font-size:34px;color:color-mix(in srgb,var(--type1) 55%,transparent)}.hint-card p{font-size:18px!important;color:#eceaf5!important;max-width:580px}.archive-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.archive-meta span{font-size:12px;border:1px solid #ffffff1d;border-radius:999px;padding:6px 9px;color:#bfc2ce}.section,.result-head,.quote{animation:rise .55s ease both}.section:nth-of-type(2){animation-delay:.06s}.section:nth-of-type(3){animation-delay:.12s}.section:nth-of-type(4){animation-delay:.18s}
+@keyframes slowSpin{to{transform:rotate(385deg)}}@keyframes archiveReveal{from{opacity:0}to{opacity:1}}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-width:620px){.power-profile{grid-template-columns:1fr}.radar-wrap{min-height:300px}}
+@media(prefers-reduced-motion:reduce){.sigil:before,.result.active,.section,.result-head,.quote{animation:none!important}}
+</style>
+<style>
+.result-head{grid-template-columns:270px 1fr!important;gap:34px!important;align-items:center!important}.result-copy{min-width:0}.result-copy .quote{padding:18px 0 0;margin:0;font-size:19px}.tarot-card{width:100%;max-width:270px;aspect-ratio:2/3.12;padding:8px;border-radius:18px;background:linear-gradient(150deg,color-mix(in srgb,var(--type1) 50%,#29233c),#0e1119 68%);border:1px solid color-mix(in srgb,var(--type1) 55%,#d8d0ff);box-shadow:0 25px 60px #0008,0 0 45px color-mix(in srgb,var(--type1) 20%,transparent);position:relative;animation:cardReveal .8s cubic-bezier(.2,.8,.2,1) both;transform-origin:center}.tarot-card:before,.tarot-card:after{content:"";position:absolute;inset:15px;border:1px solid #ffffff32;border-radius:10px;pointer-events:none}.tarot-card:after{inset:21px;border-color:#ffffff14}.tarot-frame{height:100%;border-radius:11px;display:flex;flex-direction:column;position:relative;overflow:hidden;padding:21px;background:radial-gradient(circle at 50% 37%,color-mix(in srgb,var(--type1) 31%,transparent),transparent 33%),repeating-radial-gradient(circle at 50% 38%,transparent 0 28px,#ffffff08 29px 30px),linear-gradient(180deg,#ffffff09,transparent 45%,#0005)}.tarot-frame:before{content:"";position:absolute;width:160px;height:160px;border:1px solid #ffffff12;transform:rotate(45deg);left:46px;top:83px}.tarot-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.16em;color:#ded9ed;z-index:1}.tarot-orbit{flex:1;display:grid;place-items:center;position:relative}.tarot-orbit:before,.tarot-orbit:after{content:"";position:absolute;width:142px;height:142px;border:1px solid color-mix(in srgb,var(--type1) 65%,#fff);border-radius:50%;opacity:.55}.tarot-orbit:after{width:102px;height:102px;border-style:dashed;animation:slowSpin 18s linear infinite}.tarot-mark{font-family:Georgia,"Times New Roman",serif;font-size:72px;line-height:1;color:#f4f0ff;text-shadow:0 0 22px var(--type1);z-index:2}.mode-mark{position:absolute;right:16px;bottom:32px;width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffffff55;border-radius:50%;background:#0f1119cc;color:#fff;font-size:17px;z-index:3}.tarot-copy{text-align:center;z-index:1}.tarot-epithet{font-size:11px;letter-spacing:.16em;color:#bbb4ca;margin-bottom:7px}.tarot-copy strong{display:block;font-family:Georgia,"Noto Serif SC","Songti SC",serif;font-size:25px;letter-spacing:.04em}.tarot-keywords{margin-top:10px;color:#aaa5b6;font-size:11px;letter-spacing:.12em}.deck-section{margin:28px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0}.deck-section summary{cursor:pointer;color:#cfc9e7;font-size:14px;letter-spacing:.04em;list-style:none}.deck-section summary::-webkit-details-marker{display:none}.deck-section summary:after{content:"＋";float:right;color:var(--accent2)}.deck-section[open] summary:after{content:"－"}.full-deck{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;padding:20px 0 5px}.mini-arcana{aspect-ratio:2/3;border:1px solid color-mix(in srgb,var(--mini) 55%,#555);border-radius:10px;background:radial-gradient(circle at 50% 38%,color-mix(in srgb,var(--mini) 24%,transparent),transparent 35%),#151821;padding:10px;display:flex;flex-direction:column;justify-content:space-between;text-align:center}.mini-top{display:flex;justify-content:space-between;font-size:8px;color:#9ea3b1}.mini-mark{font-family:Georgia,serif;font-size:34px;color:#f1eff8;text-shadow:0 0 14px var(--mini)}.mini-name{font-size:11px;color:#dbdce4}.mini-key{font-size:8px;color:#858b9a;margin-top:4px}@keyframes cardReveal{from{opacity:0;transform:perspective(900px) rotateY(12deg) translateY(18px) scale(.94)}to{opacity:1;transform:none}}@media(max-width:720px){.result-head{grid-template-columns:1fr!important}.tarot-card{margin:auto;max-width:255px}.result-copy{text-align:center}.power-profile{grid-template-columns:1fr}.radar-wrap{min-height:300px}.full-deck{grid-template-columns:repeat(2,1fr)}}@media(prefers-reduced-motion:reduce){.tarot-card,.tarot-orbit:after{animation:none!important}}
+</style>
+<style>
+.awakening{position:relative;margin-top:26px;padding:30px!important;border:1px solid color-mix(in srgb,var(--type1) 35%,var(--line))!important;border-radius:20px;background:linear-gradient(135deg,#181b26,color-mix(in srgb,var(--type1) 10%,#141720));overflow:hidden}.awakening:after{content:"“";position:absolute;right:22px;top:-24px;font-family:Georgia,serif;font-size:130px;color:color-mix(in srgb,var(--type1) 16%,transparent)}.chapter-label{font-size:11px;letter-spacing:.18em;color:var(--type1);margin-bottom:16px}.story-copy{font-family:Georgia,"Noto Serif SC","Songti SC",serif;font-size:18px!important;line-height:1.95!important;color:#e2e0e9!important;max-width:650px}.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feat{min-height:150px;border:1px solid var(--line);border-radius:16px;padding:19px;background:#171a23;position:relative}.feat b{display:block;color:#f1eff8;margin:17px 0 8px}.feat p{font-size:14px!important}.feat-no{font-family:Georgia,serif;color:var(--type1);font-size:13px}.mechanic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mechanic{border-top:2px solid var(--type1);background:#171a23;border-radius:4px 4px 14px 14px;padding:18px}.mechanic span{font-size:12px;letter-spacing:.12em;color:var(--type1)}.mechanic p{font-size:14px!important;margin-top:11px!important}.mechanic.cost{border-color:#d79870}.mechanic.cost span{color:#e3ae8a}.mechanic.limit{border-color:#8e94a7}.mechanic.limit span{color:#b1b6c5}.family-compare{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.compare-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#151821;min-height:150px;transition:.2s}.compare-card.current{border-color:var(--type1);background:color-mix(in srgb,var(--type1) 13%,#151821);box-shadow:0 0 25px color-mix(in srgb,var(--type1) 10%,transparent)}.compare-mark{font-family:Georgia,serif;font-size:24px;color:var(--type1)}.compare-card b{display:block;margin:12px 0 7px;font-size:14px}.compare-card p{font-size:12px!important;line-height:1.6!important}.compare-card em{display:inline-block;font-style:normal;font-size:10px;color:var(--type1);margin-top:9px}.team-role{border:1px solid var(--line);border-radius:16px;padding:20px;background:#171a23}.team-role strong{color:var(--type1)}@media(max-width:720px){.feat-grid,.mechanic-grid{grid-template-columns:1fr}.family-compare{grid-template-columns:repeat(2,1fr)}.awakening{padding:23px!important}.story-copy{font-size:17px!important}}@media(max-width:390px){.family-compare{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="topbar"><div class="brand">COREVERSE · 灵核档案</div><button id="resetTop" class="quiet" hidden>重新测试</button></header>
+  <section id="intro" class="view intro active">
+    <div class="archive-mark" aria-hidden="true"></div>
+    <div class="eyebrow">灵核觉醒测试 · V1.4</div>
+    <h1>世界出现裂缝时，你会觉醒哪种能力？</h1>
+    <p class="lead">32个日常选择将决定你获得哪一张灵核秘牌。结果不只告诉你是什么类型，还会揭晓能力规则、第一次觉醒的故事、使用代价和你在小队中的位置。</p>
+    <div class="meta"><span class="chip">约 5–7 分钟</span><span class="chip">16 种真实能力</span><span class="chip">完整觉醒故事</span></div>
+    <button id="start" class="primary">开始校准</button>
+    <p class="note">用于娱乐与自我探索，不用于心理诊断、招聘筛选或重要人生决定。</p>
+  </section>
+  <section id="quiz" class="view quiz">
+    <div class="progress-row"><div class="progress"><i id="progressFill"></i></div><div id="count" class="count"></div></div>
+    <div id="stage" class="stage"></div>
+    <h2 id="question" class="question"></h2>
+    <div id="options" class="options"></div>
+    <div class="quiz-foot"><button id="back" class="back">上一题</button><span class="note">按第一反应选择</span></div>
+  </section>
+  <section id="result" class="view result">
+    <div class="result-head">
+      <div id="tarotCard" class="tarot-card" aria-label="你的灵核秘牌">
+        <div class="tarot-frame">
+          <div class="tarot-top"><span id="tarotRoman"></span><span id="tarotCode"></span></div>
+          <div class="tarot-orbit"><div id="tarotMark" class="tarot-mark"></div><div id="modeMark" class="mode-mark"></div></div>
+          <div class="tarot-copy"><div id="tarotEpithet" class="tarot-epithet"></div><strong id="tarotName"></strong><div id="tarotKeywords" class="tarot-keywords"></div></div>
+        </div>
+      </div>
+      <div class="result-copy"><div id="resultCode" class="result-code"></div><h1 id="resultName"></h1><div id="combo" class="combo"></div><p id="quote" class="quote"></p></div>
+    </div>
+    <div class="section awakening"><div class="chapter-label">觉醒记录 · 01</div><h2>你第一次发现能力的那一晚</h2><p id="originStory" class="story-copy"></p></div>
+    <div class="section"><h2>你真正能够做到什么</h2><div id="feats" class="feat-grid"></div></div>
+    <div class="section"><div class="mechanic-grid"><div class="mechanic"><span>发动条件</span><p id="activation"></p></div><div class="mechanic cost"><span>能力代价</span><p id="powerCost"></p></div><div class="mechanic limit"><span>绝对限制</span><p id="powerLimit"></p></div></div></div>
+    <div class="section"><h2>同系四种能力有什么不同</h2><div id="familyCompare" class="family-compare"></div></div>
+    <div class="section"><h2>你的超能力雷达</h2><div class="power-profile"><div class="radar-wrap"><svg id="radar" class="radar" viewBox="0 0 360 360" role="img" aria-label="八项超能力雷达图"></svg></div><div id="bars" class="bars"></div></div></div>
+    <div class="section"><div class="grid2"><div class="card"><b>核心能力</b><p id="ability"></p></div><div class="card"><b>最适合的场景</b><p id="scene"></p></div></div></div>
+    <div class="section"><h2>如果这就是你</h2><div id="signs" class="sign-list"></div></div>
+    <div class="section"><div class="grid2"><div class="card inner-card"><b>别人眼中的你</b><p id="seen"></p></div><div class="card inner-card"><b>只有你知道的一面</b><p id="hidden"></p></div></div></div>
+    <div class="section"><h2>最容易触发你的时刻</h2><p id="trigger" class="trigger"></p></div>
+    <div class="section"><h2>能力过载时</h2><p id="shadow"></p></div>
+    <div class="section"><h2>成长任务</h2><p id="growth"></p></div>
+    <div class="section"><h2>组队提示</h2><p id="team"></p></div>
+    <div class="section"><div class="hint-card"><h2>本次档案暗示</h2><p id="hint"></p><div class="archive-meta"><span>私人档案</span><span>仅供自我探索</span><span>觉醒 V1.4</span></div></div></div>
+    <details class="deck-section"><summary>查看完整的16张灵核秘牌</summary><div id="fullDeck" class="full-deck"></div></details>
+    <div class="action-row"><button id="share" class="primary">分享我的结果</button><button id="restart" class="secondary">重新测试</button></div>
+    <p class="disclaimer">角色灵感来自科幻、奇幻与塔罗视觉中常见的能力母题，16张灵核秘牌的名称、能力规则、标识和故事均为原创设计。结果反映你在本组情境中的选择倾向，可能随环境、角色和阶段变化。Test v1.4</p>
+  </section>
+</main>
+<div id="toast" class="toast">结果已复制</div>
+<script>
+const qs=[
+['周末和朋友出去玩，大家一直定不下来去哪。你会：','看看天气、距离和评价，猜哪个选择最不容易后悔','问问大家最想要的是热闹、放松还是拍照','直接整理三个方案，让大家投票','随便挑个新地方，先出发再说'],
+['你刚买了一件需要自己组装的东西。你通常：','先看完整说明，搞懂它最后会变成什么样','先问装过的人哪里最容易踩坑','照着步骤一件件装好','先动手试，遇到问题再调整'],
+['两个好朋友吵架，都来找你诉苦。你会先：','判断这件事继续下去会变成什么局面','听他们各自到底在难过什么','把事情经过和责任理清楚','约大家换个环境，当面聊开'],
+['明天就要交东西，但大家还没做完。你会：','先找出最可能拖垮全局的问题','先安抚焦虑的人，让大家恢复沟通','列出今晚必须完成的清单并分工','放弃复杂方案，马上换成能交付的新做法'],
+['第一次去陌生城市旅行，你通常先：','看看地图和攻略，规划大致路线','看看当地人的推荐，感受哪里更有意思','先确认酒店、交通和开放时间','到了再说，看到哪里有趣就去哪里'],
+['精心准备的一次活动效果很差。你最想先知道：','自己一开始哪里判断错了','参加的人为什么没有投入','哪个环节安排出了问题','这次意外还能带来什么新机会'],
+['有人突然邀请你参加一个很不错的机会，但资料很少。你会：','先想想答应和拒绝各会发生什么','问问信任的人怎么看，也留意自己的感受','确认时间、费用和具体要求','先答应占住位置，再边了解边决定'],
+['别人说你的想法“不太行”。你第一反应更接近：','想知道他的理由会不会改变整体判断','留意他说话的语气，是建议还是针对我','追问到底哪一部分需要修改','想试一个完全不同的方法'],
+['如果让你设计一个新的校园或公司活动，你最在意：','它最后能真正解决什么问题','参加的人会不会觉得舒服、有参与感','时间、人员和流程能不能顺利执行','它有没有让人眼前一亮的新玩法'],
+['大家遇到突发状况时，常会依赖你，因为你：','比较快想到后面可能发生什么','能让慌张的人先平静下来','能把混乱的事情一件件处理掉','能在原计划之外找到替代办法'],
+['学做一道复杂的新菜时，你通常：','先搞懂每一步为什么这样做','先看别人做这道菜时有什么经验','严格照菜谱多练几次','会换材料或步骤试出自己的版本'],
+['群聊突然冷场，大家都不说话。你会：','抛出一个能让大家重新思考的话题','说出大家可能不好意思讲的感受','直接问“那我们现在到底怎么定？”','发一个意外的提议或玩笑打破僵局'],
+['你遇到一条很不合理的规定。你更可能：','先弄清它为什么存在、继续下去会怎样','看看这条规定让谁最难受','收集例子，按正式方式要求修改','先试一种新做法，用结果证明它可以改变'],
+['你很累，但还有一点自由时间。你更愿意：','安静想一个一直没想明白的问题','和喜欢的人聊聊天','收拾房间或完成一件拖着的小事','出门走走，换个地方找新鲜感'],
+['你收到朋友一句“没事，你忙吧”。你会：','结合前面的聊天猜他真正想表达什么','马上感觉到他的情绪可能不太对','直接问他是不是需要我做什么','先不下结论，之后再看他的反应'],
+['旅行计划临时取消了一项安排。你会：','重新看看会不会影响后面的行程','先确认同行的人是不是很失望','马上调整时间和预订','临时找个附近没去过的地方'],
+['如果让你选一个小组负责人，你最看重他：','能提前看到问题和方向','能照顾大家的感受','能把事情按时做完','遇到变化能马上换办法'],
+['遇到一个网上也搜不到答案的问题，你会：','把不同线索连起来，自己推一个答案','找不同的人聊聊他们的经历','拆成几个小问题逐个验证','先做几个小尝试看哪个有效'],
+['你觉得朋友正在做一个错误决定。你通常会：','把可能的后果讲给他听','先理解他为什么会这样选','拿出事实和具体解决办法','让他先试一个成本很小的版本'],
+['突然多出一整天空闲时间，你最想：','把一个想了很久的问题研究清楚','找重要的人好好聊一次','完成一个一直没做完的作品','去体验一件从未做过的事'],
+['当你特别投入一件事时，你更像：','一个人钻进去，直到把它弄懂','把合适的人都连接起来','稳住节奏，让事情持续进行','不断尝试，直到打破限制'],
+['下面哪种时刻最让你有成就感？','独自想通别人没注意到的问题','让一群人真正合作起来','在压力下守住重要的人和事','把“不可能”变成一个新开端'],
+['要完成一件很重要的事，你更需要：','一段不被打扰的时间','能随时交流的伙伴','清楚的安排和稳定节奏','一点压力和未知感'],
+['大家意见完全不同，你更常做的是：','先安静下来，自己想清楚重点','找出大家都能接受的部分','说明哪些底线不能动','提出一个没人试过的新方案'],
+['朋友更可能怎样评价你？','平时安静，但关键时刻想得很深','很会把大家拉到一起','有你在，事情比较不容易失控','总能想到意料之外的新路'],
+['生活突然发生很多变化，你最想先保住：','自己安静思考和判断的空间','和重要的人之间的联系','基本生活、原则和安全感','继续选择和尝试的自由'],
+['做完一个大任务后，你通常更想：','继续研究，把它做得更好','把经验分享给更多人','整理成以后可以复用的方法','马上去挑战下一件新事'],
+['状态不好时，你最容易出现哪种情况？','一个人想太多，越想越出不来','很在意别人有没有回应我','明知方法不灵也不想改变','不停换方向，却没有一件做完'],
+['如果只能保留一种超能力，你会选：','提前看到一个选择的后果','知道别人真正需要什么','让混乱的东西自动变得有序','在没有路的地方打开出口'],
+['如果世界缺少一样东西，你最想补上：','更清楚的方向','人与人之间的理解','能真正运行的规则和工具','从来没人试过的新可能'],
+['下面哪种情况最让你难受？','所有人只顾眼前，不想以后','大家互相误解，却没人愿意听','事情一遍遍出错，没有人整理','明明有别的可能，却不让尝试'],
+['你更希望别人怎样记住你？','他曾提前看到问题','他曾真正理解我','他曾把事情做成','他曾打开一条新路']
+];
+const families=['V','R','C','S'],modes=['F','L','A','B'];
+const familyName={V:'预知系',R:'共感系',C:'造物系',S:'跃迁系'};
+const modeName={F:'专注型',L:'协作型',A:'守护型',B:'突破型'};
+const colors={V:'#7e6ee8',R:'#d76886',C:'#2f9b96',S:'#dc7d3e'};
+const types={
+VF:['VF–01','预见','未来观察者','你像拥有“未来片段”，总能比别人更早看到事情可能怎么发展。','从杂乱信息中发现规律，提前想清不同选择的后果。','复杂问题、长期规划、需要安静判断的任务。','可能为了看得更清楚而一直补充信息，迟迟不开始。','信息达到七成时，先完成一个可以撤回的小动作。','系统改造师能把判断变成方案；心灵感应者提醒你照顾人的感受。'],
+VL:['VL–02','导航','路线领航员','你能把很多人的想法变成一条大家都看得懂的路线。','看清大方向，并让一群人知道接下来往哪里走。','团队迷茫、旅行规划、多人合作。','可能把未来讲得很清楚，却没有安排眼前该做什么。','把方向变成未来七天的三个具体动作。','城市建造师负责落地，情绪连接者帮助形成共识。'],
+VA:['VA–03','守时','风险守门人','你像能看见危险倒计时，会提前守住关键节点。','预判风险，在变化中保护长期计划和重要承诺。','长期项目、风险管理、需要持续性的事情。','可能把每一次变化都看成威胁。','提前区分“必须守住”和“可以改变”的部分。','秩序守护者守规则，极限生存者处理突发情况。'],
+VB:['VB–04','识破','漏洞侦探','别人接受默认答案时，你已经看见其中不对劲的地方。','发现旧想法里的漏洞，重新定义真正的问题。','旧方法失效、难题重想、需要创新判断。','可能一直指出问题，却没有给出能尝试的新办法。','每发现一个漏洞，就配一个小实验。','系统改造师把洞察变成方案，真话唤醒者推动改变。'],
+RF:['RF–05','读心','心灵感应者','你像接收到别人没有说出口的频道，能察觉真正的情绪。','从语气、停顿和细节中感知他人的需要。','一对一交流、朋友倾诉、复杂情绪。','可能把别人的情绪也背在自己身上。','理解别人之后，清楚说出自己的边界。','未来观察者提供方向，心灵护盾者提供稳定支持。'],
+RL:['RL–06','连接','情绪连接者','你能让互不理解的人重新连上同一个频道。','连接不同人的感受，让大家愿意继续沟通与合作。','朋友矛盾、团队摩擦、关系修复。','为了让所有人舒服，可能回避真正的冲突。','先把分歧说清楚，再寻找共同点。','路线领航员给方向，城市建造师负责执行。'],
+RA:['RA–07','护心','心灵护盾者','你的稳定像一层护盾，让身边的人敢于面对困难。','在混乱和压力中提供可靠、安全的支持。','危机陪伴、长期照顾、建立信任。','可能替别人承担太多，让自己越来越累。','帮助对方做选择，但不替对方负责。','风险守门人守节奏，极限生存者应对变化。'],
+RB:['RB–08','唤醒','真话唤醒者','你能让被压住的感受重新说出真话。','激活勇气与真实表达，让停滞的关系开始流动。','沉闷气氛、创意表达、需要有人先开口时。','可能把情绪很强烈，误当成事情一定正确。','表达感受之后，再补上事实和下一步行动。','漏洞侦探提供新角度，冒险带队者推动行动。'],
+CF:['CF–09','造物','精密造物师','你像拥有“具现化”能力，能把脑中的想法变成可靠作品。','长时间专注，把细节打磨到稳定可用。','做作品、练技能、处理复杂细节。','可能不断修改，错过真正交付的时间。','开始前先定义“做到什么程度就可以停”。','未来观察者帮助判断，秩序守护者维护质量。'],
+CL:['CL–10','建城','城市建造师','你能把人、工具和规则组合成一座会自己运转的城市。','组织多人协作，把想法变成能运行的系统。','项目落地、活动组织、资源协调。','可能把人的感受也当成流程问题处理。','在流程里给个人差异留出空间。','路线领航员给方向，情绪连接者照顾合作体验。'],
+CA:['CA–11','结界','秩序守护者','你能建立清楚的结界，让混乱停在边界之外。','建立规则、底线和可靠承诺，让事情稳定运转。','安全管理、标准执行、需要守住底线的场景。','可能为了守规则，忘了规则原本要保护谁。','定期问自己：这条规则现在还在保护什么？','风险守门人看长期，心灵护盾者看人的需要。'],
+CB:['CB–12','重组','系统改造师','你能看见系统内部的零件，并把失灵部分重新组合。','拆解低效做法，设计更顺畅的新流程。','流程卡住、产品改版、旧方法需要升级。','改变太快时，别人可能还没来得及适应。','先在小范围试一次，再决定是否全面改变。','漏洞侦探发现问题，冒险带队者推动切换。'],
+SF:['SF–13','潜行','隐秘探路者','你像能看见隐藏通道，常发现别人没注意的小路。','独立探索低成本入口和冷门机会。','新领域探索、个人试验、寻找替代路线。','可能同时探索太多方向，没有一条真正走远。','每次只保留一条主路线。','未来观察者帮助筛选，极限生存者守住资源。'],
+SL:['SL–14','带队','冒险带队者','你能把犹豫的人一起拉进一场新的冒险。','用行动和感染力带动大家进入新局面。','快速启动、旅行探险、需要有人先行动时。','速度太快时，团队可能跟不上。','每次出发前确认：谁还没有准备好？','真话唤醒者激活意愿，城市建造师承接执行。'],
+SA:['SA–15','生存','极限生存者','无论环境怎么变化，你都能保存最重要的资源和退路。','在不确定中快速适应，同时守住最低安全线。','突发状况、资源有限、计划不断变化。','可能长期处于应急状态，忘了建设未来。','局面稳定后，主动开始一件长期事情。','风险守门人给出节奏，心灵护盾者维护信任。'],
+SB:['SB–16','跃迁','空间跃迁者','当所有路都堵住时，你会直接跳到一个全新的位置。','用大胆尝试冲破限制，为停滞局面打开出口。','从零开始、强阻力、需要快速破局的时刻。','可能只追求新鲜变化，低估长期成本。','每次大胆尝试前，先设好退出和复盘条件。','漏洞侦探重想问题，系统改造师沉淀成果。']};
+const arcana={
+VF:{roman:'I',mark:'✦',mode:'│',epithet:'未发生之事',keys:'洞察 · 推演 · 可能'},
+VL:{roman:'II',mark:'✧',mode:'∞',epithet:'群星的航向',keys:'方向 · 连接 · 远景'},
+VA:{roman:'III',mark:'⧗',mode:'□',epithet:'倒计时之前',keys:'预警 · 节点 · 守望'},
+VB:{roman:'IV',mark:'⟁',mode:'╱',epithet:'答案的裂缝',keys:'识破 · 质疑 · 重定义'},
+RF:{roman:'V',mark:'◉',mode:'│',epithet:'沉默的回声',keys:'感知 · 倾听 · 深潜'},
+RL:{roman:'VI',mark:'◎',mode:'∞',epithet:'相连的频率',keys:'共鸣 · 协调 · 联结'},
+RA:{roman:'VII',mark:'◌',mode:'□',epithet:'静默的护盾',keys:'安定 · 陪伴 · 信任'},
+RB:{roman:'VIII',mark:'◍',mode:'╱',epithet:'被唤醒的真话',keys:'真实 · 勇气 · 点燃'},
+CF:{roman:'IX',mark:'◆',mode:'│',epithet:'思想的具现',keys:'专注 · 打磨 · 完成'},
+CL:{roman:'X',mark:'▦',mode:'∞',epithet:'会呼吸的城',keys:'组织 · 协作 · 运转'},
+CA:{roman:'XI',mark:'◇',mode:'□',epithet:'边界之内',keys:'规则 · 承诺 · 秩序'},
+CB:{roman:'XII',mark:'⬡',mode:'╱',epithet:'重组的零件',keys:'拆解 · 更新 · 系统'},
+SF:{roman:'XIII',mark:'⊙',mode:'│',epithet:'地图之外',keys:'隐径 · 独行 · 发现'},
+SL:{roman:'XIV',mark:'↟',mode:'∞',epithet:'风暴的邀请',keys:'行动 · 感染 · 出发'},
+SA:{roman:'XV',mark:'◐',mode:'□',epithet:'最后的火种',keys:'适应 · 资源 · 生存'},
+SB:{roman:'XVI',mark:'⌁',mode:'╱',epithet:'空间的缺口',keys:'自由 · 破局 · 跃迁'}
+};
+const lore={
+VF:{power:'时间镜',story:'凌晨零点十七分，你在站台玻璃里看见了三个自己：一个登上列车，一个转身离开，一个拨通了那通迟迟没有打出的电话。三幅画面只存在七秒，却各自带着真实的温度。你第一次明白，你看到的并不是命运，而是选择即将长出的分支。',feats:['在关键选择前看见三条最可能发生的未来','发现某个小决定将在之后引起的连锁变化','从失败的未来片段中带回一个可以改变现在的线索'],activation:'独处、安静，并把注意力集中在一个具体选择上。问题越清楚，镜中的未来越稳定。',cost:'每看一次未来，你都会短暂保留那些“没有真正发生”的记忆，容易分不清遗憾来自现实还是分支。',limit:'只能看见可能性，不能看见确定结局；也无法替别人作出选择。',compare:'看见一个人即将作出的选择会长出哪些未来。',role:'在小队作出不可逆决定前，排除代价最高的路线。'},
+VL:{power:'命运航图',story:'城市停电后，所有撤离路线同时失效。你抬头时，看见每个人胸前伸出一根微光，害怕、责任和希望交织成一张悬浮航图。最亮的道路不是最近的路，而是所有人真正愿意一起走下去的方向。',feats:['看见一群人的意愿最终会汇聚到哪里','把彼此冲突的目标整理成一条共同路线','在团队迷失时标出下一座可以抵达的坐标'],activation:'必须听见队伍中至少三个人真实想保护的东西。',cost:'航图会同时传来所有人的犹豫，你越想照顾每个人，路线就越模糊。',limit:'只能显示大家愿意共同承担的方向，不能强迫任何人踏上那条路。',compare:'看见一群人能够共同走通的未来路线。',role:'在多人行动中确定共同目标，让队伍不因分歧而散开。'},
+VA:{power:'终末警钟',story:'医院走廊一切正常，只有你听见远处传来钟声。每经过一扇门，声音就更清晰，直到你在一台仍显示绿色的设备上看见红色倒计时。六分钟后，它本应发生的故障没有发生，因为你提前拔掉了那根发热的线路。',feats:['感知正在累积、但还没有爆发的危险','看见风险距离失控还剩多少时间','找到最早可以切断连锁反应的节点'],activation:'当你真心想保护某个人、承诺或长期目标时，倒计时才会出现。',cost:'长时间开启后，普通小问题也会像警报一样刺耳，使你无法真正放松。',limit:'只能预警能够被行动改变的风险，无法预测纯粹随机的意外。',compare:'看见危险何时逼近，以及在哪里还能阻止它。',role:'负责风险预警、撤离时机和最后一道安全检查。'},
+VB:{power:'悖论之眼',story:'档案馆里所有证词都指向同一个人，唯独墙上的影子方向不对。你闭上一只眼，谎言与规则表面出现细细裂纹；触碰裂缝后，整套完美证词像玻璃一样碎开，露出被所有人忽略的前提。',feats:['看见谎言、规则和论证中无法自洽的裂缝','触碰裂缝，显露被隐藏的前提或弱点','在封闭系统中找到可以被重新定义的入口'],activation:'必须面对一个人人默认正确、而你仍愿意追问的问题。',cost:'看得越多，你越难轻易相信完整而漂亮的答案，也可能让身边的人感到被审视。',limit:'只能证明哪里不成立，不能自动告诉你什么才是真相。',compare:'看见未来逻辑中会导致崩塌的矛盾与漏洞。',role:'识破陷阱、伪装和错误规则，为队伍找出真正的问题。'},
+RF:{power:'心声回响',story:'庆功宴上所有人都在笑，你却听见杯子碰撞声下藏着一段低沉回声。它来自角落里那个一直说“我没事”的人。你走近后，回声变成雨声——你听不到他的思想，却知道他正在独自承受一场暴雨。',feats:['把未说出口的情绪听成声音、颜色或触感','分辨一句“没事”背后更真实的需要','在对方无法表达时找到最适合靠近的方式'],activation:'需要安静观察一个具体的人，并暂时放下自己的判断。',cost:'强烈情绪会在你体内留下余响，人多时可能同时接收到太多频道。',limit:'不能读取具体思想、秘密或事实，只能感知情绪与需要。',compare:'深入感知一个人没有说出口的情绪。',role:'识别隐藏恐惧与真实需求，避免队伍在沉默中失去成员。'},
+RL:{power:'共鸣网络',story:'救援队在暴风雨前争执不休。你把手放在桌面上，每个人胸口的光开始连成环。十秒里，他们第一次同时感受到别人的恐惧、责任和坚持。意见没有消失，但争吵停了，因为所有人终于明白彼此为何不肯退让。',feats:['让多人短暂感受到彼此真实的情绪','找到一个群体可以共同回应的情感频率','修复因误解而断开的沟通连接'],activation:'至少两个人愿意暂时放下防御，允许彼此被感知。',cost:'连接人数越多，你自己的感受越容易被淹没。',limit:'能够增加理解，却不能让不同的人自动同意。',compare:'让多个人在同一时间真正理解彼此。',role:'恢复团队连接，在分裂前重新建立理解。'},
+RA:{power:'静默圣域',story:'警报响起时，人群开始推挤。你站在楼梯中央，脚下展开一圈没有声音的光。进入光圈的人仍然害怕，却能重新呼吸、看见出口、听懂指令。你把所有人的慌乱挡在身体之外，直到最后一个人离开。',feats:['展开降低恐慌与情绪冲击的安全领域','让受到惊吓的人重新恢复思考和行动','替重要的人挡住一次过强的精神冲击'],activation:'当你明确知道自己想守护谁，圣域会以那个人为中心展开。',cost:'被挡下的情绪不会消失，而会在圣域关闭后回到你身上。',limit:'只能提供稳定与缓冲，不能替任何人解决造成痛苦的现实问题。',compare:'把情绪风暴隔绝在一个安全空间之外。',role:'在危机中稳定队伍，为救援和决策争取时间。'},
+RB:{power:'真言火种',story:'会议上每个人都说项目没有问题，桌下却积满暗红色灰烬。你说出第一句真话时，一点火星从掌心升起；未被表达的事实依次变成火焰，照亮每个人刻意避开的部分。火没有伤人，却让沉默再也无法伪装成和平。',feats:['让被压抑的感受以火光显现','点燃一个人说出真实感受的勇气','烧掉用客气、玩笑和沉默堆成的假象'],activation:'必须由你先说出一件对自己也有代价的真话。',cost:'如果你只是想逼别人承认错误，火会先灼伤你。',limit:'不能控制别人坦白，只能让被压住的真实变得无法忽视。',compare:'让被压抑的真实获得出现和表达的力量。',role:'打破集体沉默，在关系彻底失真前唤醒真相。'},
+CF:{power:'思想具现',story:'避难所缺少净水装置，图纸至少需要三天。你闭上眼，把水流、压力和每个零件在脑中组装完整；睁眼时，一台半透明装置已经落在掌心。它只能存在十二小时，却足够让所有人撑到救援抵达。',feats:['把清晰理解的结构暂时具现为实体','迅速制造一个能够工作的原型','让抽象想法第一次被看见、触摸和测试'],activation:'必须在脑中理解每个关键部分如何工作，模糊想象无法成形。',cost:'具现物越精密，你的注意力消耗越快；分心时结构会出现裂纹。',limit:'无法创造自己完全不理解的东西，也不能让临时造物永久存在。',compare:'把一个人的完整想法直接变成可以使用的实体。',role:'在资源不足时制造关键工具和第一版解决方案。'},
+CL:{power:'万物编城',story:'废弃车站里散落着人、机器和失效的物资。你看见它们之间浮现连接线：谁能修理、谁能照顾伤员、哪块电池还能供电。连接完成后，混乱的车站像城市一样重新有了呼吸，每个部分都知道自己该如何运转。',feats:['看见人、工具和资源之间最有效的连接','让分散个体组成能够自行运行的网络','为复杂协作建立清晰角色与循环'],activation:'需要先知道每个成员真正能贡献什么，而不是你希望他们成为什么。',cost:'系统越大，你越容易把自己变成维持一切的中心。',limit:'网络只能放大自愿投入，无法把不愿参与的人变成零件。',compare:'把多人和资源组合成会自行运转的整体。',role:'建立基地、分配资源，让队伍从临时合作变成真正系统。'},
+CA:{power:'边界刻印',story:'黑雾越过门缝时，你用手指在地面写下一条规则：“带着恶意者不得进入。”文字亮起，化成一道透明边界。你也被同一条规则约束——心中出现伤害念头的瞬间，结界对你同样关闭。',feats:['把清楚、公平的规则刻成真实结界','阻挡违反条件的人或力量越过边界','保护承诺、资源和安全空间不被侵犯'],activation:'规则必须具体、可判断，并且由你第一个遵守。',cost:'维持的规则越多，你自己的行动空间也越小。',limit:'不能制定只约束别人、不约束自己的规则。',compare:'把规则变成所有人都必须遵守的保护结界。',role:'守住基地、底线和关键承诺，阻止混乱越界。'},
+CB:{power:'结构炼金',story:'整座城市的运输系统已经瘫痪，屏幕上只剩红色错误。你触碰控制台后，轨道、班次、权限与能源化成漂浮零件。你没有修复旧系统，而是把它重新组合成一套从未存在过、却立即能够运行的新结构。',feats:['把失灵系统拆解成可见的组成部分','重新排列流程、权限和资源连接','用原有材料炼成完全不同的运行方式'],activation:'必须找到系统反复制造问题的核心结构，而非只处理表面故障。',cost:'每次大规模重组都会打断原有习惯，改变越快，周围人的失重感越强。',limit:'可以重组制度和工具，不能把人的关系当作零件强行优化。',compare:'拆掉失灵结构，再把原有部分炼成新系统。',role:'修复基础设施与流程，在旧系统无法挽救时完成重建。'},
+SF:{power:'影门',story:'迷宫尽头没有出口，墙面却有一道光照不到的影子。你把手伸进影子，摸到一只不存在的门把。门后不是捷径，而是一条从未被任何地图记录的小路。只有愿意独自先走一步的人，才能看见它。',feats:['在被忽略的角落看见隐藏通道','进入地图、规则和常识之外的小路','从无人探索的区域带回稀有线索'],activation:'必须暂时离开人群的既定路线，并接受没有人保证正确。',cost:'影门会让你远离熟悉坐标，探索越深，越难向别人解释自己在哪里。',limit:'同一扇门第一次只能由发现者进入，确认安全后才能留下标记。',compare:'为独行者打开一条别人尚未发现的隐藏路径。',role:'侦察未知区域，为队伍寻找低成本入口与秘密路线。'},
+SL:{power:'风暴之门',story:'峡谷被风暴封锁，桥已经断裂。你向前一步，狂风在面前旋转成门。只要身后的人仍相信这次行动，门就保持开启；每有人犹豫离队，门框便暗下一寸。你必须一边前进，一边让所有人看见对岸。',feats:['在不确定环境中打开可供多人通过的通道','把行动勇气传递给仍在犹豫的人','让一支队伍快速从旧局面进入新阶段'],activation:'至少有一个人愿意跟随你迈出第一步，风暴才会形成门。',cost:'你要承受所有同行者的犹豫；队伍越大，门越难稳定。',limit:'无法独自替别人通过，跟随者必须亲自选择跨出那一步。',compare:'打开一扇需要众人共同信任才能维持的群体通道。',role:'带领队伍穿过高风险转折，负责启动与士气。'},
+SA:{power:'极境适应',story:'冰原温度降到零下六十度时，你的呼吸忽然变慢，瞳孔变成银色，皮肤开始保存每一点热量。你没有制造避难所，而是让自己成为能够在这里存活的生命。环境每改变一次，你的身体和判断方式也随之改变。',feats:['快速适应极寒、缺氧、黑暗或资源匮乏','在危机中自动保留最关键的能力和资源','把极端环境转化为自己可以行动的条件'],activation:'只有承认环境已经改变、停止等待恢复原状时，适应才会开始。',cost:'每次适应都会留下痕迹，回到正常环境后需要时间重新成为原来的自己。',limit:'只能改变自己，不能自动让同行者获得同样适应。',compare:'让自己适应任何恶劣环境，并守住最低生存线。',role:'负责极端环境生存、资源判断和撤退路线。'},
+SB:{power:'裂隙跃迁',story:'世界在你脚下开始坍塌，所有出口都通往同一个结局。你看见空气中出现一道细线，用手撕开后，另一种可能从裂隙后透出光。你带着现在的记忆跳了进去——身后的世界随即闭合，再也无法完全回到原来的位置。',feats:['撕开现实限制，跃迁到尚未被选择的可能','跳过已经无法解决的封闭局面','在绝境中为自己创造一次彻底重新开始'],activation:'必须承认旧路线已经结束，并愿意承担无法完全回头的代价。',cost:'每次跃迁都会永久放弃至少一种原本可能拥有的生活。',limit:'不能回到一模一样的起点，也不能替还没准备好的人作出跃迁。',compare:'舍弃一条已经封死的现实，跳入全新的可能。',role:'在所有常规方案失效时执行最终破局与转移。'}
+};
+const details={
+VF:{signs:['发出一条重要消息前，你可能已经在脑中演练过对方的几种回复。','去陌生地方前，你会顺手查路线、天气或评价，哪怕最后没有完全照计划走。','别人催你立刻决定时，你反而更难做出选择，因为你同时看见了几个后果。'],seen:'冷静、谨慎、很难被一句话带跑。别人常以为你已经想好了，其实你只是比他们更早看见了问题。',hidden:'你不是没有勇气，而是不愿轻易让一个仓促选择伤害未来。你真正需要的，是一点不被催促的思考空间。',trigger:'信息明明不够，却有人要求你马上表态；或者别人只谈眼前，完全不考虑之后会发生什么。',hint:'如果最近有一个想法反复回来，它未必是在提醒你继续分析，也可能是在催你做第一次小验证。'},
+VL:{signs:['朋友约旅行或聚会时，你常会自然地把零散意见整理成一个大家能接受的安排。','当一群人开始迷茫，你会先说“我们最终到底想要什么”。','你能记住别人随口提过的目标，并在关键时候把它重新带回讨论。'],seen:'有方向感、能把大家带到一起，像是在混乱中拿着地图的人。',hidden:'你有时也会怀疑自己是不是带错了路，只是你很少在大家都依赖你时表现出来。',trigger:'所有人都在表达意见，却没有人愿意为方向负责；或者团队不断忙碌，却不知道为什么而做。',hint:'你最近想带大家去的那个方向，也许不需要再讲得更宏大，只需要一个人先走出第一步。'},
+VA:{signs:['重要事情临近前，你会比别人更早想到“万一出了问题怎么办”。','你习惯记住日期、节点和还没兑现的承诺。','临时变化不会立刻让你崩溃，但会让你迅速检查后面还有多少东西会被影响。'],seen:'可靠、稳、做事有后手。别人常在真正出问题时才意识到你提前做了多少准备。',hidden:'你对失控的警觉，往往来自你不想让重要的人或事情承担本可避免的代价。',trigger:'别人把风险当作“想太多”，或者在最后一刻随意改变已经影响很多人的安排。',hint:'你正在守住的东西里，有一部分已经足够安全。放松一小块边界，可能会让真正重要的部分更有力量。'},
+VB:{signs:['大家都说“本来就是这样”时，你会下意识追问为什么。','你很容易发现一句话里前后不一致的地方。','你对过于整齐、人人赞同的答案反而会多留一个心眼。'],seen:'有洞察力、难糊弄，有时也显得爱抬杠。',hidden:'你不是为了反对而反对。你只是很难假装没看见一个迟早会出问题的漏洞。',trigger:'别人要求你接受明显站不住脚的解释，或者用“大家都这样”结束讨论。',hint:'你最近看见的那个漏洞，可能不是让你继续证明别人错了，而是在邀请你做出第一个替代版本。'},
+RF:{signs:['别人说“我没事”时，你常能从停顿或语气里听出另一层意思。','你会记住朋友很久以前提过的小事，并在合适的时候问起。','人多热闹之后，你可能需要独处，把不属于自己的情绪慢慢放下。'],seen:'温柔、懂人、很适合倾诉。很多人会在不知不觉中对你说得比原计划更多。',hidden:'你并非永远有耐心。有时你只是习惯先理解别人，把自己的需要放到了最后。',trigger:'有人嘴上说没关系，却用态度让你猜；或者你已经感受到问题，对方仍坚持什么都没有。',hint:'最近让你莫名疲惫的情绪，不一定全部属于你。把其中一部分还给原来的主人。'},
+RL:{signs:['群聊气氛变僵时，你会换一种说法，让双方都比较容易接住。','你常知道同一句话应该怎样对不同的人说。','大家关系好起来时，你会比任务完成本身更有满足感。'],seen:'好相处、会照顾场面、能让陌生人很快放松。',hidden:'你也有明确立场，只是你担心一旦说得太直，关系就再也回不到原来的位置。',trigger:'双方都想被理解，却谁也不肯先听；或者有人把你的协调当作理所当然。',hint:'有一段关系不需要你继续维持表面和平。把真实分歧说出来，连接才可能真正恢复。'},
+RA:{signs:['朋友遇到事时，你会说“你先别急，我在”，然后真的留下来。','你很少轻易承诺，但答应的事情通常会记很久。','当周围的人情绪很乱时，你会先让自己的声音和动作慢下来。'],seen:'稳定、可信、像一个可以暂时靠岸的地方。',hidden:'你也希望有人主动问一句“你现在还撑得住吗”，而不是默认你永远没事。',trigger:'你认真守护的人轻视自己的安全，或者别人只在需要帮助时才想起你。',hint:'可靠并不等于必须一直坚强。你允许别人看见一点疲惫，关系反而会更真实。'},
+RB:{signs:['大家都绕着一个问题说话时，你可能会成为第一个把它说破的人。','你很容易被真诚、勇气和强烈的现场感打动。','一场真正说开了的争论，有时比长时间客气相处更让你轻松。'],seen:'直接、有感染力、能把沉闷的气氛点亮。',hidden:'你最怕的不是冲突，而是所有人都装作没事，让真实感受慢慢失去声音。',trigger:'有人用冷漠或玩笑压住真正的问题，或者要求你把明显的感受收回去。',hint:'你想说的那句真话值得出现，但换一个对方能听进去的温度，它会走得更远。'},
+CF:{signs:['看到一个东西细节不对，你很难假装没发现。','别人觉得已经可以交了，你脑中常会自动出现还能改进的地方。','你喜欢那种投入很久，最后做出一个真正像样成果的满足感。'],seen:'专业、认真、交到你手里的东西会更完整。',hidden:'你对作品的高要求里，常藏着对自己是否足够好的担心。',trigger:'别人要求你在明显粗糙时直接交付，或者轻描淡写地否定你投入的大量细节。',hint:'你手上那件迟迟没有完成的作品，可能已经可以被世界看见。完成有时比完美更接近创造。'},
+CL:{signs:['几个人一起做事时，你会自然注意谁负责什么、哪里还缺人。','看到重复混乱的流程，你会忍不住想做一个表或规则。','一次活动顺利结束后，你会复盘哪些安排下次还能继续使用。'],seen:'能干、会组织、总有办法让事情真正动起来。',hidden:'你也会厌倦一直当那个收拾局面的人，只是看到没人接手时又很难放着不管。',trigger:'大家都提想法，却没人承担执行；或者同一个错误反复发生却没人整理。',hint:'不是所有空缺都需要你补上。留下一小块没有被你接管的地方，别人才能长出能力。'},
+CA:{signs:['你会在开始前问清规则、责任和不能碰的底线。','别人觉得“差不多就行”时，你会想到这样做会不会留下隐患。','你对守时、守约和一致标准比多数人更敏感。'],seen:'有原则、有分寸，关键时候不会乱。',hidden:'你的边界并不等于冷漠，它通常是你保护信任的方式。',trigger:'有人反复越界后还说你太认真，或者为了方便临时改掉对所有人都重要的规则。',hint:'有一条你守了很久的规则，也许已经完成了使命。重新确认它，而不是自动继续服从它。'},
+CB:{signs:['一个流程让人反复做无用功时，你会马上想哪里可以删掉或重排。','你不太留恋“以前一直这样做”的方法。','面对大问题，你常先拆成几个可以重新组合的部分。'],seen:'清醒、高效，能把卡住的系统重新启动。',hidden:'你有时改变得很快，是因为忍受低效比面对未知更让你难受。',trigger:'所有人都知道系统有问题，却因为怕麻烦继续重复旧做法。',hint:'你已经知道哪里该改。下一步的关键不是设计更大的方案，而是找到最小、最安全的试点。'},
+SF:{signs:['你会收藏一些很冷门的地点、工具或知识，等需要时突然派上用场。','别人走常规路线时，你常能找到更省力的小办法。','你喜欢先一个人摸清环境，再决定要不要把发现告诉更多人。'],seen:'独立、有自己的路，总能找到别人没注意的入口。',hidden:'你并非不需要同伴，只是不愿在路线还没弄清之前，被别人的期待限制。',trigger:'还没开始探索就被要求照标准答案走，或者别人不断追问你什么时候能给出成果。',hint:'你发现的那条小路已经走得够远了。现在也许该留下标记，让值得的人能够跟上。'},
+SL:{signs:['大家犹豫要不要去做时，你往往会先说“试一次再说”。','临时旅行、突发活动和新机会容易让你兴奋。','你能让原本没兴趣的人也想跟着一起看看。'],seen:'有活力、敢开始，和你在一起事情容易发生。',hidden:'你偶尔也会怕停下来，因为安静之后就要面对那些还没有收尾的东西。',trigger:'机会就在眼前，身边的人却因为反复讨论一直不动。',hint:'你不缺下一次出发。最近真正会改变你的，可能是把一次已经开始的旅程走到终点。'},
+SA:{signs:['计划突然改变时，你会先确认手机、电量、钱和回去的路线。','资源有限时，你很快知道哪些必须保留，哪些可以放弃。','别人慌乱的时候，你往往先做眼前最实际的一件事。'],seen:'适应力强、很能扛，环境越乱你反而越清醒。',hidden:'长期处在应急模式里，你可能已经忘了没有危机时自己真正想要什么。',trigger:'退路被堵住、基本资源不确定，或者别人只顾冒险却没有准备后果。',hint:'你已经安全地度过了不少变化。接下来值得做的，也许不是继续防守，而是为未来建一个固定坐标。'},
+SB:{signs:['一件事被说成“不可能”时，你反而更想试试看。','旧方法彻底卡住后，你比多数人更敢全部推翻重来。','你对新的城市、身份、项目或生活方式容易产生突然的冲动。'],seen:'大胆、难预测，常能在绝境里打开出口。',hidden:'你追求变化，有时是为了靠近自由，有时也可能是在离开一个不想面对的停顿。',trigger:'选择被彻底封死，或者有人用过去的你规定你以后只能成为什么样的人。',hint:'真正的跃迁不只发生在离开时。最近那扇门，也许要等你带着一部分旧经验一起穿过去。'}
+};
+let idx=0,answers=[];
+const $=s=>document.querySelector(s); const views=['intro','quiz','result'];
+function show(id){views.forEach(v=>$('#'+v).classList.toggle('active',v===id));$('#resetTop').hidden=id==='intro';scrollTo(0,0)}
+function start(){idx=0;answers=[];show('quiz');renderQ()}
+function renderQ(){const q=qs[idx];$('#count').textContent=`${idx+1} / ${qs.length}`;$('#progressFill').style.width=`${(idx/qs.length)*100}%`;$('#stage').textContent=idx<20?'第一阶段 · 识别主能力':idx<28?'第二阶段 · 识别驱动方式':'最终校准';$('#question').textContent=q[0];const box=$('#options');box.innerHTML='';q.slice(1).forEach((x,i)=>{const b=document.createElement('button');b.className='option'+(answers[idx]===i?' selected':'');b.textContent=x;b.onclick=()=>choose(i);box.appendChild(b)});$('#back').style.visibility=idx?'visible':'hidden'}
+function choose(i){answers[idx]=i;document.querySelectorAll('.option').forEach((x,n)=>x.classList.toggle('selected',n===i));setTimeout(()=>{if(idx<qs.length-1){idx++;renderQ()}else finish()},150)}
+function finish(){const fs={V:0,R:0,C:0,S:0},ms={F:0,L:0,A:0,B:0};answers.forEach((a,i)=>{if(i<20)fs[families[a]]+=2;else if(i<28)ms[modes[a]]+=2;else fs[families[a]]+=3});const fam=[...families].sort((a,b)=>fs[b]-fs[a]),mod=[...modes].sort((a,b)=>ms[b]-ms[a]);const key=fam[0]+mod[0];localStorage.setItem('coreverseResult',JSON.stringify({key,fs,ms,secondary:fam[1]}));renderResult({key,fs,ms,secondary:fam[1]})}
+function pct(obj,k){const total=Object.values(obj).reduce((a,b)=>a+b,0)||1;return Math.round(obj[k]/total*100)}
+function drawRadar(vals,labels){
+  const svg=$('#radar'),cx=180,cy=180,maxR=122,n=vals.length;
+  const point=(i,r)=>{const a=-Math.PI/2+i*2*Math.PI/n;return [cx+Math.cos(a)*r,cy+Math.sin(a)*r]};
+  const poly=r=>Array.from({length:n},(_,i)=>point(i,r).join(',')).join(' ');
+  let html='<title>超能力八维雷达图</title>';
+  [0.25,0.5,0.75,1].forEach(v=>html+=`<polygon class="radar-grid" points="${poly(maxR*v)}"/>`);
+  for(let i=0;i<n;i++){const [x,y]=point(i,maxR);html+=`<line class="radar-axis" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`}
+  const maxFamily=Math.max(...vals.slice(0,4)),maxMode=Math.max(...vals.slice(4));
+  const radii=vals.map((v,i)=>36+86*v/(i<4?maxFamily:maxMode));
+  const dataPoints=radii.map((r,i)=>point(i,r));
+  html+=`<polygon class="radar-shape" points="${dataPoints.map(p=>p.join(',')).join(' ')}"/>`;
+  dataPoints.forEach(([x,y])=>html+=`<circle class="radar-point" cx="${x}" cy="${y}" r="4"/>`);
+  labels.forEach((lab,i)=>{const [x,y]=point(i,151);html+=`<text class="radar-label" x="${x}" y="${y}">${lab}</text>`});
+  svg.innerHTML=html;
+}
+function renderDeck(){
+  $('#fullDeck').innerHTML=Object.entries(arcana).map(([key,a])=>`<div class="mini-arcana" style="--mini:${colors[key[0]]}"><div class="mini-top"><span>${a.roman}</span><span>${types[key][0]}</span></div><div class="mini-mark">${a.mark}</div><div><div class="mini-name">${lore[key].power}</div><div class="mini-key">${types[key][2]} · ${a.keys}</div></div></div>`).join('');
+}
+function renderResult(r){const t=types[r.key],d=details[r.key],a=arcana[r.key],l=lore[r.key],family=r.key[0],mode=r.key[1];document.documentElement.style.setProperty('--type1',colors[family]);$('#tarotRoman').textContent=a.roman;$('#tarotCode').textContent=t[0];$('#tarotMark').textContent=a.mark;$('#modeMark').textContent=a.mode;$('#tarotEpithet').textContent=a.epithet;$('#tarotName').textContent=l.power;$('#tarotKeywords').textContent=a.keys;$('#resultCode').textContent=`第 ${a.roman} 号灵核秘牌 · ${t[0]}`;$('#resultName').textContent=l.power;$('#combo').textContent=`持有者：${t[2]} · ${familyName[family]} × ${modeName[mode]} · 副能力 ${familyName[r.secondary]}`;$('#quote').textContent='“'+t[3]+'”';$('#originStory').textContent=l.story;$('#feats').innerHTML=l.feats.map((x,i)=>`<div class="feat"><span class="feat-no">0${i+1}</span><b>能力表现</b><p>${x}</p></div>`).join('');$('#activation').textContent=l.activation;$('#powerCost').textContent=l.cost;$('#powerLimit').textContent=l.limit;$('#familyCompare').innerHTML=Object.keys(lore).filter(k=>k[0]===family).map(k=>`<div class="compare-card ${k===r.key?'current':''}"><div class="compare-mark">${arcana[k].mark}</div><b>${lore[k].power}</b><p>${lore[k].compare}</p>${k===r.key?'<em>你的能力</em>':''}</div>`).join('');$('#ability').textContent=t[4];$('#scene').textContent=t[5];$('#signs').innerHTML=d.signs.map(x=>`<div class="sign"><i></i><span>${x}</span></div>`).join('');$('#seen').textContent=d.seen;$('#hidden').textContent=d.hidden;$('#trigger').textContent=d.trigger;$('#shadow').textContent=t[6];$('#growth').textContent=t[7];$('#team').textContent=l.role+' '+t[8];$('#hint').textContent=d.hint;const labels={V:'预知',R:'共感',C:'造物',S:'跃迁',F:'专注',L:'协作',A:'守护',B:'突破'};const vals=[...families.map(k=>[k,pct(r.fs,k)]),...modes.map(k=>[k,pct(r.ms,k)])];drawRadar(vals.map(x=>x[1]),vals.map(x=>labels[x[0]]));$('#bars').innerHTML=vals.map(([k,v])=>`<div><div class="bar-label"><span>${labels[k]}</span><span>${v}</span></div><div class="bar-track"><div class="bar-fill" style="width:${Math.max(v*2.2,8)}%;--bar:${families.includes(k)?colors[k]:'#a999ef'}"></div></div></div>`).join('');renderDeck();show('result')}
+async function share(){const saved=JSON.parse(localStorage.getItem('coreverseResult'));if(!saved)return;const t=types[saved.key],a=arcana[saved.key],l=lore[saved.key];const text=`我的灵核秘牌是 ${a.mark} ${l.power}（${t[0]}）\n持有者：${t[2]}\n${a.epithet}｜${a.keys}\n${l.compare}\n你会觉醒哪种能力？`;if(navigator.share){try{await navigator.share({title:'灵核档案｜灵核秘牌',text,url:location.href});return}catch(e){}}await navigator.clipboard.writeText(text+'\n'+location.href);const toast=$('#toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)}
+$('#start').onclick=start;$('#back').onclick=()=>{if(idx){idx--;renderQ()}};$('#restart').onclick=start;$('#resetTop').onclick=start;$('#share').onclick=share;
+const saved=localStorage.getItem('coreverseResult');if(saved){try{renderResult(JSON.parse(saved))}catch(e){}}
+</script>
+</body>
+</html>

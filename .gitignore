@@ -1,0 +1,10 @@
+# Local archives and temporary files
+*.tar.gz
+*.zip
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.idea/
+.vscode/
+
